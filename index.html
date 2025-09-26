@@ -1,84 +1,51 @@
-/* Define color palette as variables for easy management */
-:root {
-    --primary-color: #F4F4F9;   /* 60% - Almost White */
-    --secondary-color: #2C3E50; /* 30% - Dark Slate */
-    --accent-color: #1ABC9C;    /* 10% - Bright Teal */
-    --text-light: #FFFFFF;
-    --text-dark: #34495E;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* --- Basic Reset & Global Styles --- */
-body {
-    font-family: sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    background-color: var(--primary-color); /* Applying 60% color */
-    color: var(--text-dark);
-}
+    <header>
+        <nav>
+            <a href="#home" class="logo">YN</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* --- Applying the 30% Secondary Color --- */
-header, footer {
-    background-color: var(--secondary-color);
-    color: var(--text-light);
-    padding: 1rem 5%;
-    text-align: center;
-}
+    <main>
+        <section id="hero">
+            <h1>Hi, I'm Your Name</h1>
+            <p>A creative developer building beautiful and functional web experiences.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </section>
 
-.project-card {
-    background-color: var(--secondary-color);
-    color: var(--text-light);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project Title One</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Title Two</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-/* --- Applying the 10% Accent Color --- */
-h1 {
-    color: var(--accent-color);
-}
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
 
-.btn, .contact-btn {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--text-light);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover, .contact-btn:hover {
-    background-color: #16a085; /* A slightly darker shade of the accent for hover */
-}
-
-.project-card a {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* --- Simple Layout for Demo --- */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav ul { list-style: none; display: flex; gap: 20px; }
-nav a { color: var(--text-light); text-decoration: none; }
-
-#hero {
-    text-align: center;
-    padding: 4rem 1rem;
-}
-
-#projects {
-    padding: 2rem 5%;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
+</body>
+</html>
